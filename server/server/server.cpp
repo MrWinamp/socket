@@ -9,7 +9,7 @@ int main()
     int err, sockfd;
     WSAData wsaData;
     err = WSAStartup(MAKEWORD(2, 2), &wsaData);
-
+    
     if (err != 0) {
         printf("WSAStartup failed with error: %d\n", err);
         return 1;
